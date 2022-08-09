@@ -1,5 +1,6 @@
 # secretlint-example
 
+SARIF example
 
 
 ## Install
