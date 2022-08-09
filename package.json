@@ -1,0 +1,37 @@
+{
+  "name": "secretlint-example",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/azu/secretlint-example",
+  "bugs": {
+    "url": "https://github.com/azu/secretlint-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/secretlint-example.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/secretlint-example.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "sarif": "secretlint \"**/*\" --format @secretlint/secretlint-formatter-sarif --output results.sarif",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@secretlint/secretlint-formatter-sarif": "^4.2.1",
+    "@secretlint/secretlint-rule-preset-recommend": "^4.2.0",
+    "secretlint": "^4.2.0"
+  },
+  "dependencies": {
+    "p": "^0.2.0"
+  }
+}
