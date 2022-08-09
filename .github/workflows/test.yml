@@ -23,7 +23,7 @@ jobs:
           cache: "yarn"
           node-version: 16
       - name: secretlint
-        run: 
+        run: npm run sarif
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
