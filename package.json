@@ -23,7 +23,7 @@
     "test": "test"
   },
   "scripts": {
-    "sarif": "secretlint \"**/*\" --format @secretlint/secretlint-formatter-sarif --output results.sarif",
+    "sarif": "secretlint \"**/*\" --format @secretlint/secretlint-formatter-sarif --output results.sarif; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
